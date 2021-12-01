@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="src/ico.png" type="image/x-icon"/>
+    <title>Лабораторная работа №5</title>
+</head>
+<body>
+    <div class="container">
+        <img src="src/обои_на_рабочий_стол_gachimuchi_Billy_Herrington_Van_Darkholme_6043572.jpeg">
+        <div class="textInside">Лабораторная работа №5</div>
+    </div>
+    <div class="labChooser">
+        <ul id="menu">
+            <li><a href="lab1.html">ЛР1</a></li>
+            <li><a href="lab2.html">ЛР2</a></li>
+            <li><a href="lab3.html">ЛР3</a></li>
+            <li><a href="lab4.html">ЛР4</a></li>
+            <li class="selected"><a href="lab5.html">ЛР5</a></li>
+            <li><a href="index.html">ДОМОЙ</a></li>
+        </ul>
+    </div>
+    <div class="konspekt">
+        <h2><strong>Цель работы</strong> </h2>
+        <p>Изучить нормативные документы ФСТЭК по построению модели угроз. Построить модель угроз информационной системы персональных данных функционирующей в Вашей организации.</p>
+        <h2><strong>Теоретическая часть</strong> </h2>
+        <p>
+            В соответствии с «Методикой определения актуальных угроз безопасности персональных данных при их обработке в информационных системах
+            персональных данных» разработанной ФСТЭК, определение уровня исходной защищённости производится на основании анализа технических и
+            эксплуатационных характеристик ИСПДн.
+        </p>
+        <p>
+            Исходный уровень защищенности определяется следующим образом:
+        </p>
+        <p>
+            ИСПДн имеет высокий уровень исходной защищенности, если не менее 70% характеристик ИСПДн соответствуют уровню «высокий»
+            (суммируются положительные решения по первому столбцу, соответствующему высокому уровню защищенности), а остальные – среднему
+            уровню защищенности (положительные решения по второму столбцу).
+        </p>
+        <p>
+            ИСПДн имеет средний уровень исходной защищенности, если не выполняются условия по пункту 1 и не менее 70% характеристик ИСПДн соответствуют
+            уровню не ниже «средний» (берется отношение суммы положительные решений по второму столбцу, соответствующему среднему уровню защищенности, к
+            общему количеству решений), а остальные – низкому уровню защищенности.
+        </p>
+        <p>
+            ИСПДн имеет низкую степень исходной защищенности, если не выполняются условия по пунктам 1 и 2.
+        </p>
+        <p>
+            В соответствии с «Методикой определения актуальных угроз безопасности персональных данных при их обработке в информационных системах персональных
+            данных» разработанной ФСТЭК, под частотой (вероятностью) реализации угрозы понимается определяемый экспертным путем показатель, характеризующий,
+            насколько вероятным является реализация конкретной угрозы безопасности ПДн для данной ИСПДн в складывающихся условиях обстановки.
+        </p>
+        <h2><strong>Показатели, необходимые для расчёта для построения модели угроз ПДн</strong></h2>
+        <ul>
+            <li>Вероятность реализации угрозы</li>
+            <li>Показатель опасности угрозы для ИСПДн</li>
+            <li>Возможность реализации угрозы</li>
+            <li>Актуальность угрозы</li>
+        </ul>
+        <h2><strong>Актуальные угрозы</strong></h2>
+        <p>Те угрозы, которые попадают под методику определения актуальных угроз безопасности персональных данных утвержденную властями РФ от 14.02.2008 </p>
+        <h2><strong>Нормативные документы для построения модели угроз</strong></h2>
+        <p>Базовая модель угроз безопасности персональных данных при их обработке в информационных системах персональных данных</p>
+    </div>
+</body>
+<footer>
+    <div class="bottom">
+        <p class="copyright">2021 &#169; Иван Коровин, ИКБ-83<br>Занят бездельем, играю словами.</p>
+    </div>
+</footer>
+
+    <style>
+        .container {
+            position: relative;
+            margin-right: -8px;
+            margin-left: -8px;
+            margin-top: -8px;
+        }
+
+        .textInside {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 72px;
+            color: white;
+            font-family: "Comic Sans MS", serif;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .bottom {
+            position: relative;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-align: center;
+            font-family: Consolas, sans-serif;
+            background-color: lightgoldenrodyellow;
+            height: 80px;
+            margin-right: -8px;
+            margin-left: -8px;
+            margin-bottom: -8px;
+        }
+        
+        .copyright {
+            position: center;
+            padding-top: 1%;
+        }
+
+        .konspekt{
+            font-family: "Comic Sans MS", sans-serif;
+            font-size: 18px;
+        }
+
+        .labChooser{
+            padding: 20px;
+            padding-left: 525px;
+        }
+
+        ul#menu
+        { position: center;
+            margin: 0;}
+
+        ul#menu li
+        { float: left;
+            padding: 0 0 0 9px;
+            list-style: none;
+            margin: 1px 10px 0 0;
+            background: #b0b0b0;}
+
+        ul#menu li a
+        { font: normal 100% 'trebuchet ms', sans-serif;
+            display: block;
+            float: left;
+            height: 20px;
+            padding: 6px 35px 5px 28px;
+            text-align: center;
+            color: #FFF;
+            text-decoration: none;
+            background: transparent;}
+
+        ul#menu li.selected a
+        { height: 20px;
+            padding: 6px 35px 5px 28px;}
+
+        ul#menu li.selected
+        { margin: 1px 10px 0 0;
+            background: chocolate;}
+
+        ul#menu li.selected a, ul#menu li.selected a:hover
+        { background: dimgrey;
+            color: #FFF;}
+
+        ul#menu li a:hover
+        { color: #FFF;
+            background: dimgrey;}
+    </style>
+</html>
