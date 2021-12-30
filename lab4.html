@@ -23,6 +23,11 @@
             <li><a href="lab10.html">ЛР10</a></li>
             <li><a href="lab11.html">ЛР11</a></li>
             <li><a href="lab12.html">ЛР12</a></li>
+            <li><a href="lab13.html">ЛР13</a></li>
+            <li><a href="lab14.html">ЛР14</a></li>
+            <li><a href="lab15.html">ЛР15</a></li>
+            <li><a href="lab16.html">ЛР16</a></li>
+            <li><a href="lab17.html">ЛР17</a></li>
             <li><a href="index.html">ДОМОЙ</a></li>
         </ul>
     </div>
@@ -145,19 +150,27 @@
         }
 
         .labChooser{
-            padding: 20px;
-            padding-left: 135px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: center;
         }
 
         ul#menu
-        { position: center;
-            margin: 0;}
+        {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            position: center;
+            margin: 0;
+        }
 
         ul#menu li
-        { float: left;
+        {
             padding: 0 0 0 9px;
             list-style: none;
-            margin: 1px 10px 0 0;
+            margin: 1px 10px 10px 0;
             background: #b0b0b0;}
 
         ul#menu li a
@@ -176,7 +189,7 @@
             padding: 6px 35px 5px 28px;}
 
         ul#menu li.selected
-        { margin: 1px 10px 0 0;
+        { margin: 1px 10px 10px 0;
             background: chocolate;}
 
         ul#menu li.selected a, ul#menu li.selected a:hover
